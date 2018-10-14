@@ -23,6 +23,8 @@ along with the number of values you'd like to predict.
 ## How it works:
 The 624 known outputs undergo some bit manipulation to undo the tempering done to the state values. After this, the generator's state is now reconstructed, allowing for any future value to be predicted. Using the now known current state, numbers are generated using the same tempering the MT19937 uses. A list of consecutive "random numbers" is returned. Assuming your 624 numbers are correct and in order, this method has 100% accuracy. 
 
+![predict](https://user-images.githubusercontent.com/32622260/46912329-055e8980-cf38-11e8-9e56-32953e4ee38d.PNG)
+
 ### TODO:
 - Add input validation.
 - Add test cases / examples for proof.
